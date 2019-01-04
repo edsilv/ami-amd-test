@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>requirejs-stencil-test</title>
+</head>
+<body>
+
+    <script>
+
+        var deps = ['lib/ami.min'];
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            requirejs(deps, function(d) {
+                console.log(d);         
+            });
+        });
+        
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"></script>
+
+</body>
+</html>
